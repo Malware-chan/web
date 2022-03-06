@@ -1,0 +1,14 @@
+css3
+
+
+
+
+
+html5
+	video		opciones de vídeo, estilo de los controles, obtención del punto pulsado (pageX - offset)
+
+
+
+
+js
+

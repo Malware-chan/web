@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="video.js"></script>
+    <link rel="stylesheet" href="video.css"> 
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+        autoplay
+        loop
+        poster="portada.png"
+        controls            debe ir antes que autoplay, si no no aparecerán hasta que se termine de reproducir
+        width - height      si no se especifican, serán los del vídeo
+        <video src="394a8f33159d15db.mp4" controls autoplay width="500" height="500"></video>
+    -->
+    
+    <!-- De la siguiente forma funcionará aunque el navegador no admita uno de los formatos de vídeo -->
+    <section id="vid-section">
+        <video id="vid" width="720">
+            <source src="394a8f33159d15db.mp4">
+            <source src="394a8f33159d15db.ogg">
+        </video>
+
+        <!-- Se ha eliminado el atributo 'controls', pondrémos los nuestros -->
+        <nav id="controls">
+            <div id="control-buttons">
+                <button type="button" id="play">Play</button>
+            </div>
+            <div id="progress-bar">
+                <div id="current-progress"></div>
+            </div>
+        </nav>
+    </section>
+</body>
+</html>

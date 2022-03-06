@@ -1,0 +1,35 @@
+@charset "utf-8";
+
+#vid-section {
+    width: 720px;
+    margin: 20px auto;
+    background-color: blueviolet;
+    padding: 5px;
+    border: 2px solid navy;
+}
+
+#controls {
+    margin: 5px 0px;
+
+}
+
+#control-buttons {
+    display: inline-block;
+    width: auto;
+    height: auto;
+}
+
+#progress-bar {
+    display: inline-block;
+    background-color: aliceblue;
+    width: 650px;
+    height: 16px;
+    border: 2px solid grey;
+}
+
+#current-progress {
+    position: absolute;
+    width: 0px;
+    height: 16px;
+    background-color: darkblue;
+}
