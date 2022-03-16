@@ -4,6 +4,7 @@ ini_set( 'display_errors', 1 );
 error_reporting( ~0 );
 
 // Ver y comparar com db_pdo.php
+// Con el uso de marcadores de usa bindValue() en vez de bindParam()
 if ( isset( $_POST[ 'button' ] ) ) {
     require( 'db_conn_web_conf.php' );
     $username = $_POST['username'];
