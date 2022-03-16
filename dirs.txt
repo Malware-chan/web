@@ -1,14 +1,14 @@
 css3
 
 
-
-
-
 html5
+	audio		insertar archivos de audio en html
 	video		opciones de vídeo, estilo de los controles, obtención del punto pulsado (pageX - offset)
-
-
 
 
 js
 
+
+php
+	forms		envia los datos del formulaio para ser procesados en PHP
+	db_conn_web	conexión entre una página web y una base de datos
