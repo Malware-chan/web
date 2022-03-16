@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+
+<body>
+    <form name="form_test" method="POST" action="forms.php">
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname"><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname">
+
+        <input type="submit" class="button" name="button" id="button" value="Send">
+    </form>
+
+    <!-- 
+        También podemos incluir el código PHP en este fichero: 
+        <?php include('forms1.php'); ?>
+        De ser así, la extensión debería ser .php en vez de .html
+        y no sería necesario usar el atributo action="forms.php" 
+
+        Nota: los campos del formularios se identifican por 'name', no por 'id'
+    -->
+</body>
+
+</html>
