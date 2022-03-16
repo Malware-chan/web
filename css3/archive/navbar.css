@@ -1,0 +1,95 @@
+:root {
+    --nav-c: darkslateblue;
+    --nav-c-hover: blueviolet;
+    /* Phone */
+    --nav-itemw-xs: 30%;
+    --nav-itempad-xs: 10px;
+    /* Tablet */
+    --nav-itemw-sm: 20%;
+    --nav-itempad-sm: 15px;
+    /* PC */
+    --nav-itemw-lg: 15%;
+    --nav-itempad-lg: 15px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#main-nav {
+    background-color: var(--nav-c);
+}
+
+#main-nav ul {
+    display: grid;
+    grid-template-columns: repeat(5, var(--nav-itemw-lg));
+    list-style: none;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+#main-nav ul li {
+    padding: var(--nav-itempad-lg) var(--nav-itempad-lg);
+    background-color: var(--nav-c);
+}
+
+#main-nav ul li:hover {
+    background-color: var(--nav-c-hover);
+}
+
+#main-nav ul li a {
+    text-decoration: none;
+    text-align: center;
+    color: aliceblue;
+    display: block;
+}
+
+#main-nav ul li ul {
+    display: none;
+}
+
+#main-nav ul li:hover ul {
+    display: block;
+    position: absolute;
+    margin-top: var(--nav-itempad-lg);
+    margin-left: calc(var(--nav-itempad-lg) * -1);
+    width: var(--nav-itemw-lg);
+}
+
+#main-nav li:hover ul li {
+    background-color: var(--nav-c-hover);
+}
+
+#main-nav li:hover ul li:hover {
+    background-color: violet;
+}
+
+@media (max-width: 768px) {
+    #main-nav ul {
+        grid-template-columns: repeat(5, var(--nav-itemw-sm));
+    }
+    #main-nav ul li {
+        padding: var(--nav-itempad-sm) var(--nav-itempad-sm);
+    }
+    #main-nav ul li:hover ul {
+        margin-top: var(--nav-itempad-sm);
+        margin-left: calc(var(--nav-itempad-sm) * -1);
+        width: var(--nav-itemw-sm);
+    }
+}
+
+@media (max-width: 480px) {
+    #main-nav ul {
+        grid-template-columns: repeat(1, var(--nav-itemw-xs));
+    }
+    #main-nav ul li {
+        padding: var(--nav-itempad-xs) var(--nav-itempad-xs);
+    }
+    #main-nav ul li:hover ul {
+        margin-top: var(--nav-itempad-xs);
+        margin-left: calc(var(--nav-itempad-xs) * -1);
+        width: var(--nav-itemw-xs);
+    }
+}
