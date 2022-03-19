@@ -5,6 +5,7 @@ error_reporting( ~0 );
 
 if ( isset( $_POST[ 'button' ] ) ) {
     
+    // time(); -> 10 digit-timestamp
     echo date('Y-m-d' .' -- ');
     echo date('Y M D' .' -- ');
 
