@@ -130,3 +130,13 @@ function Point2(x, y) {
         }
     });
 }
+
+
+
+// Property Descriptors
+let th = { name: 'Flan' };
+Object.defineProperty(th, 'name', {
+    writable: false, // -> can be overriden
+    enumerable: false, // -> can appear as property for its children
+    configurable: false, // -> can be removed
+});
