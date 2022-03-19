@@ -1,8 +1,4 @@
 <?php
-
-ini_set( 'display_errors', 1 );
-error_reporting( ~0 );
-
 if ( isset( $_POST[ 'button' ] ) ) {
     
     // time(); -> 10 digit-timestamp
@@ -25,5 +21,4 @@ if ( isset( $_POST[ 'button' ] ) ) {
         Zona horaria, latitud y longitud definidas en php.ini
     */
 }
-
 ?>

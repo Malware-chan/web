@@ -15,4 +15,11 @@
 
     bindValue(), bindParam() --> execute();
     execute(array(':bks' => $var ...))
+
+
+
+    // Syntax
+    function greet($fname, $lname) {
+        echo "Hi, $fname $lname!";
+    }
 ?>
