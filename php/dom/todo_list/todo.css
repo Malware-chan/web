@@ -30,7 +30,6 @@
 }
 
 #todo-list-c ul li {
-    padding: var(--todo-padding);
     background-color: var(--todo-c);
 }
 
@@ -40,6 +39,8 @@
 
 #todo-list-c ul li a {
     text-decoration: none;
+    display: block;
+    padding: var(--todo-padding);
     color: var(--todo-tc);
 }
 
