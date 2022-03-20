@@ -11,6 +11,10 @@ let run = function() {
 let flan = function Flan() {
     console.log('Flan');
 };
+// Function Declaration - hoisted (moved to the top of the code when executed)
+function hi() {}
+// Function Expression
+const hey = function hey() {};
 
 
 // Functions are objects
@@ -40,7 +44,7 @@ Circle.call({}, 1);
 
 
 
-// Arrow functions
+// Arrow functions (inherit the context: 'this', see private_weakmap.js)
 const found = courses.find(function(course) {
     return course.name === 'a';
 });
